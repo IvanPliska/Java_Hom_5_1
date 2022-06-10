@@ -8,7 +8,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class SQRServicetest {
 
     @ParameterizedTest
-    @CsvFileSource(files = "src/test/resources/SQRServ.csv") // в файле SQRerv.csv подобраны значения для тестирования программы
+    @CsvFileSource(files = "src/test/resources/SQRServ.csv")
+    // в файле SQRerv.csv подобраны значения для тестирования программы
 
     public void testSQRServiceDownUpper(int result, int down, int upper) {
         SQRService service = new SQRService();
